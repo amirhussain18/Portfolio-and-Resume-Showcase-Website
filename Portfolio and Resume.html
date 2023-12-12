@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidenav">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="sidenavbtns">
+            <span class="navbtn"><i class="fa-solid fa-house"></i>Home</span>
+            <span class="navbtn"><i class="fa-solid fa-circle-exclamation"></i>About</span>
+            <span class="navbtn"><i class="fa-solid fa-book"></i>Education</span>
+            <span class="navbtn"><i class="fa-solid fa-crown"></i>Skills</span>
+            <span class="navbtn"><i class="fa-solid fa-code-branch"></i>Projects</span>
+            <span class="navbtn"><i class="fa-solid fa-user"></i>Contact</span>
+        </div>
+    </div>
+        
+    <div class="navbar">
+        <h2>Portfolio.</h2>
+        <div class="secbtn">
+            <span class="navbtn"><i class="fa-solid fa-house"></i>Home</span>
+            <span class="navbtn"><i class="fa-solid fa-circle-exclamation"></i>About</span>
+            <span class="navbtn"><i class="fa-solid fa-book"></i>Education</span>
+            <span class="navbtn"><i class="fa-solid fa-crown"></i>Skills</span>
+            <span class="navbtn"><i class="fa-solid fa-code-branch"></i>Projects</span>
+            <span class="navbtn"><i class="fa-solid fa-user"></i>Contact</span>
+        </div>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="main">
+
+        <div class="sidebar">
+            <img src="profilePic.jpg" alt="profilePic">
+            <h2>Md Arif Hussain</h2>
+            <p>I am a <strong>Web Developer</strong>. I have been coding since I was 15 years old and I love creating beautiful and functional websites.</p>
+        </div>
+        
+        <div class="content">
+            
+            <div class="home">
+                <h2>Home</h2>
+                <p>Welcome to my portfolio and resume website. Here you can find more information about me, my skills, and my projects. You can also contact me if you are interested in hiring me or collaborating with me.</p>
+            </div>
+            
+            <div class="about">
+                <h2 id="about">About</h2>
+                <p>I am a student at Lovely Professional University (LPU), Punjab, currently pursuing a Bachelor of Technology degree in Computer Science. I have skills in HTML, CSS, and basic Python programming. I am interested in web development and data science, and I am always eager to learn new technologies and tools. I am passionate about creating innovative and user-friendly solutions for real-world problems</p>
+            </div>
+            
+            <div class="education">
+                <h2>Education</h2>
+                <div class="educontainer">
+                    <div class="edubox">
+                        <h4>B. Tech (CSE)</h4><hr>
+                        <p>Lovely Professional University<br>Phagwara, Punjab</p>
+                    </div>
+                    <div class="edubox">
+                        <h4>Higher Sec. (12th)</h4><hr>
+                        <p>K.P. Higher sec. School<br>Dumri, Bihar</p>
+                    </div>
+                    <div class="edubox">
+                        <h4>Sec. (10th)</h4><hr>
+                        <p>D.A.V. Public School<br>Dumraon, Bihar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skillcontainer">
+                    <div class="skillbox">
+                            <h4>Programming Languages</h4><hr>
+                            <ul>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>C++</li>
+                            </ul>
+                    </div>
+                    <div class="skillbox">
+                        <h4>Web Technologies</h4><hr>
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="skillbox">
+                        <h4>Data Management</h4><hr>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skillbox">
+                        <h4>Tools</h4><hr>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>MS Office</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="projectscontainer">
+                    <div class="projectbox">
+                        <h4>Blog Website</h4><hr>
+                        <p>A simple blog website where users can create, edit, delete, and comment on posts.</p>
+                    </div>
+                    <div class="projectbox">
+                        <h4>E-Commerce Website</h4><hr>
+                        <p>An online shopping website where users can browse, search, add to cart, and checkout products.</p>
+                    </div>
+                    <div class="projectbox">
+                        <h4>ToDo List App</h4><hr>
+                        <p>A web application where users can create, edit, delete, and mark as done their tasks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>If you want to contact me, you can use any of the following methods:</p>
+                <div class="contactcontainer">
+                    <form>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email"><br>
+                        <textarea id="story" name="q" placeholder="Message..."></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <ul type="none" id="contactlist">
+                        <li><a href="mailto:hmdarif654@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>  Email</a></li>
+                        <li><a href="https://wa.me/8789475684" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>  Whatsapp</a></li>
+                        <li><a href="https://www.linkedin.com/in/mdarif786" target="_blank"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a></li>
+                        <li><a href="https://www.github.com/mdarifh786" target="_blank"><i class="fa-brands fa-square-github"></i>  GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

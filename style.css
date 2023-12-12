@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+    /* text-overflow: none; */
+    text-align: justify;
+}
+
+body {
+    font-family: 'Segoe UI';
+    background-image: url("bg.jpg");
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main {
+    margin: 0rem 6rem;
+}
+
+/***********************************************/
+/****************** NAVBAR *********************/
+/***********************************************/
+
+.sidenav {
+    position: absolute;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 70%;
+    z-index: 5;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    transform: translateX(18rem);
+    transition: transform 0.5s ease-in-out;
+    display: none;
+}
+
+.sidenav .sidenavbtns {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.sidenav span {
+    margin: 1rem 2rem 0rem 2rem;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-weight: bold;
+}
+
+.sidenav i {
+    margin-right: 0.2rem;
+}
+
+.sidenav > i{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.navbar {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 8px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem;
+    border-radius: 1.6rem;
+}
+
+.navbar h2 {
+    font-size: 25px;
+    margin: 0px;
+    margin-left: 11.5rem;
+}
+
+.navbar .secbtn {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.navbar .navbtn {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    text-shadow: 2px 2px 4px black;
+    cursor: pointer;
+    transition: transform 0.1s ease-in;
+}
+
+.navbar .navbtn i {
+    margin-right: 0.25rem;
+}
+
+.navbar>i{
+    display: none;
+    margin-right: 2rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+/***********************************************/
+/****************** SIDEBAR ********************/
+/***********************************************/
+
+.sidebar {
+    float: left;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.4rem;
+    color: white;
+    box-shadow: 4px 4px 8px black;
+    border-radius: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+
+.sidebar img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px white;
+}
+
+.sidebar h2 {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 4px 12px rgb(0, 0, 0);
+    margin: 0.54rem 0rem;
+}
+
+.sidebar p {
+    font-family: "Segoe UI";
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 8px black;
+    margin-top: 0rem;
+    margin-bottom: 0.62rem;
+    line-height: 1.625rem;
+}
+
+.sidebar strong {
+    text-shadow: 2px 2px 8px rgb(69, 114, 181);
+}
+
+/***********************************************/
+/****************** CONTENT ********************/
+/***********************************************/
+
+.content {
+    float: right;
+    width: 70%;
+    padding: 2.5rem 0rem 0rem 5.3rem;
+    color: black;
+    font-size: 1.4rem;
+    text-shadow: 4px 4px 6px white;
+}
+
+.content h2 {
+    font-size: 3.43rem;
+    text-shadow: 6px 6px 12px white;
+    margin: 0px;
+    font-weight: bold;
+}
+
+.content p,
+.content ul {
+    font-weight: 600;
+    margin-top: 1.375rem;
+}
+
+.content li {
+    margin: 1rem 0rem;
+}
+
+.educontainer {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.edubox {
+    width: 18rem;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px black;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.edubox h4 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.edubox p{
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+.skillcontainer {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillbox {
+    width: 10rem;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px black;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.skillbox h4 {
+    margin: 1rem 1rem 0rem 1rem;
+    text-align: center;
+}
+
+.projectscontainer {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projectbox {
+    width: 13rem;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 8px black;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.projectbox h4 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    transition: transform 0.1s ease-in;
+}
+
+.projectbox h4:hover {
+    transform: scale(1.05);
+}
+
+.projectbox p {
+    margin: 1rem;
+}
+
+.contactcontainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: transform 0.1s ease-in;
+}
+
+.contact a:hover {
+    text-shadow: 6px 6px 10px white;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.licontent {
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+.contact form {
+    display: inline-block;
+    width: 50%;
+}
+
+.contact input[type="email"],
+.contact input[type="text"] {
+    height: 2.5rem;
+    width: 18.5rem;
+    background-color: lightblue;
+    color: black;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 8px black;
+    margin-bottom: 0.5rem;
+    border: none;
+    display: inline-block;
+}
+
+.contact textarea {
+    background-color: lightblue;
+    color: black;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 8px black;
+    height: 7rem;
+    width: 18.5rem;
+    border: none;
+}
+
+.contact button {
+    background-color: lightblue;
+    color: black;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: none;
+    box-shadow: 4px 4px 8px black;
+    transition: background-color 0.1s ease-in;
+}
+
+.contact button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid lightblue;
+    color: white;
+}
+
+.contact #contactlist {
+    margin-top: 0px;
+}
+
+/***********************************************/
+/***************** ANIMATION *******************/
+/***********************************************/
+
+
+@keyframes arrive {
+    0% {
+        opacity: 0%;
+        left: -50px;
+    }
+    10% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 30%;
+        left: -30px;
+    }
+    80% {
+        left: 0px;
+    }
+    100% {
+        opacity: 100%;
+        left: 0px;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    10% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.content>div {
+    animation: appear 0.7s linear;
+}
+
+.content h2 {
+    animation: arrive 0.7s linear;
+    left: 0px;
+    position: relative;
+}
+
+
+@media only screen and (max-width: 600px){
+    .main {
+        margin: 2rem;
+    }
+
+    .sidenav {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        height: 3rem;
+    }
+
+    .navbar .navbtn {
+        display: none;
+    }
+
+    .navbar h2 {
+        margin-left: 2rem;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar h2 {
+        font-size: 2.1rem;
+    }
+
+    .content > div {
+        display: none;
+    }
+
+}
