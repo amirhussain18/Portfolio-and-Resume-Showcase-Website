@@ -284,7 +284,7 @@ body {
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px black, inset 4px 4px 8px white;
     display: inline-block;
     margin: 0.5rem;
 }
@@ -312,7 +312,7 @@ body {
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px black, inset 4px 4px 8px white;
     display: inline-block;
     margin: 0.5rem;
 }
@@ -335,7 +335,7 @@ body {
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px black, inset 4px 4px 8px white;
     display: inline-block;
     margin: 0.5rem;
 }
@@ -391,7 +391,7 @@ body {
     color: black;
     font-size: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px black, inset 0px 0px 4px black;
     margin-bottom: 0.5rem;
     border: none;
     display: inline-block;
@@ -402,7 +402,7 @@ body {
     color: black;
     font-size: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px black, inset 0px 0px 4px black;
     height: 7rem;
     width: 18.5rem;
     border: none;
@@ -416,7 +416,7 @@ body {
     border-radius: 0.5rem;
     text-align: center;
     border: none;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px black, inset 0px 0px 4px black;
     transition: background-color 0.1s ease-in;
 }
 
